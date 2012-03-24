@@ -26,7 +26,7 @@ import org.spoutshafter.client.util.Streams;
 public class Main extends Applet {
 	private static final long serialVersionUID = 1L;
 	
-	protected static float VERSION = 1.3f;
+	protected static float VERSION = 1.4f;
 	
 	protected static String launcherDownloadURL = "http://ci.getspout.org/job/Spoutcraft%20Launcher/promotion/latest/Recommended/artifact/target/launcher-dev-SNAPSHOT.jar";
 	protected static String normalLauncherFilename = "spoutcraft.jar";
@@ -111,7 +111,6 @@ public class Main extends Applet {
 				}
 			}
 			
-            
 		} 
 		catch(Exception e) {
 			// if errors
