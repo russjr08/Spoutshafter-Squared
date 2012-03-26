@@ -28,7 +28,7 @@ public class Main extends Applet {
 	
 	protected static float VERSION = 1.4f;
 	
-	protected static String launcherDownloadURL = "http://ci.getspout.org/job/Spoutcraft%20Launcher/promotion/latest/Recommended/artifact/target/launcher-dev-SNAPSHOT.jar";
+	protected static String launcherDownloadURL = "http://ci.spout.org/view/Legacy/job/Spoutcraft%20Launcher/lastSuccessfulBuild/artifact/target/launcher-dev-SNAPSHOT.jar";
 	protected static String normalLauncherFilename = "spoutcraft.jar";
 	protected static String hackedLauncherFilename = "spoutcraft_modified.jar";
 	
