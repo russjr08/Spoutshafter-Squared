@@ -26,7 +26,7 @@ import org.spoutshafter.client.util.Streams;
 public class Main extends Applet {
 	private static final long serialVersionUID = 1L;
 	
-	protected static float VERSION = 1.5f;
+	protected static float VERSION = 1.6f;
 	
 	protected static String launcherDownloadURL = "http://mineshafter.tr0l.it/version/Spoutcraft-Launcher.jar";
 	protected static String normalLauncherFilename = "spoutcraft.jar";
