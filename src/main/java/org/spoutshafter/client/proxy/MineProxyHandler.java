@@ -112,8 +112,8 @@ public class MineProxyHandler extends Thread {
 				data = this.proxy.skinCache.get(username); // Then get it from there
 			} else {
 				//url = "http://" + MineProxy.authServer + "/skin/" + username + ".png"; <-- Keep this code for API implementation
-				//url = "http://" + MineProxy.authServer + "/game/getskin.php?name=" + username;
-				url = "http://" + MineProxy.authServer + "/game/getskin/" + username;
+				url = "http://" + MineProxy.authServer + "/game/getskin.php?name=" + username;
+				//url = "http://" + MineProxy.authServer + "/game/getskin/" + username;
 				
 				System.out.println("To: " + url);
 				
@@ -134,8 +134,8 @@ public class MineProxyHandler extends Thread {
 				data = this.proxy.cloakCache.get(username);
 			} else {
 				//url = "http://" + MineProxy.authServer + "/cloak/get.jsp?user=" + username;
-				//url = "http://" + MineProxy.authServer + "/game/getcloak.php?user=" + username;
-				url = "http://" + MineProxy.authServer + "/game/getcloak/" + username;
+				url = "http://" + MineProxy.authServer + "/game/getcloak.php?user=" + username;
+				//url = "http://" + MineProxy.authServer + "/game/getcloak/" + username;
 				
 				System.out.println("To: " + url);
 				
@@ -153,8 +153,8 @@ public class MineProxyHandler extends Thread {
 			String updateInfo = new String(SimpleRequest.get("http://" + MineProxy.authServer + "/update/client/0"));
 			String[] updateInfoArray = updateInfo.split(":"); // Split out each chuck of information
 			
-			//url = "http://" + MineProxy.authServer + "/game/getversion.php?proxy=" + this.proxy.version;
-			url = "http://" + MineProxy.authServer + "/game/getversion/" + updateInfoArray[0];
+			url = "http://" + MineProxy.authServer + "/game/getversion.php?proxy=" + this.proxy.version;
+			//url = "http://" + MineProxy.authServer + "/game/getversion/" + updateInfoArray[0];
 			System.out.println("To: " + url);
 			
 			try {
@@ -176,8 +176,8 @@ public class MineProxyHandler extends Thread {
 			System.out.println("JoinServer");
 			
 			params = joinserverMatcher.group(1);
-			//url = "http://" + MineProxy.authServer + "/game/joinserver.php" + params;
-			url = "http://" + MineProxy.authServer + "/game/joinserver" + params;
+			url = "http://" + MineProxy.authServer + "/game/joinserver.php" + params;
+			//url = "http://" + MineProxy.authServer + "/game/joinserver" + params;
 			System.out.println("To: " + url);
 			data = getRequest(url);
 			System.out.println(data);
@@ -187,8 +187,8 @@ public class MineProxyHandler extends Thread {
 			System.out.println("CheckServer");
 			
 			params = checkserverMatcher.group(1);
-			//url = "http://" + MineProxy.authServer + "/game/checkserver.php" + params;
-			url = "http://" + MineProxy.authServer + "/game/checkserver" + params;
+			url = "http://" + MineProxy.authServer + "/game/checkserver.php" + params;
+			//url = "http://" + MineProxy.authServer + "/game/checkserver" + params;
 			System.out.println("To: " + url);
 			data = getRequest(url);
 			System.out.println(data);
